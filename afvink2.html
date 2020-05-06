@@ -1,0 +1,16 @@
+{% extends "base_afvink2.html" %}
+
+{% block title %} Nucleotide converter {% endblock %}
+
+{% block content %}
+<h1> Convert nucleotides to proteins </h1>
+<form method="get">
+    <p> Give your sequence:
+    <input type="text" name="nucleotide">
+    </p>
+    <p>Translation:
+        {{ translate }}
+    </p>
+    <button type="submit"> Submit </button>
+</form>
+{% endblock %}
